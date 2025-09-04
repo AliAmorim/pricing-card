@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e9ebf8;
+}
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  gap: 32px;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 34px 44px 0 rgba(0, 11, 115, 0.1);
+}
+
+.offer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  padding: 0px;
+  width: 330px;
+}
+
+.offer-header h1 {
+  font-family: Merriweather;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+.offer-header p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin: 8px 0 0 0;
+  text-align: center;
+  width: 250px;
+}
+
+.plan-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  width: 330px;
+}
+
+.plan-option {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: border-color 0.7s, box-shadow 0.3s;
+}
+
+.plan-option.selected {
+  border-color: #4f46e5;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+}
+
+.plan-option:hover {
+  border-color: #4f46e5;
+}
+
+.plan-option input[type="radio"] {
+  accent-color: #4f46e5;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.plan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plan-content .plan-type {
+  color: #0c1033;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.plan-content .plan-title {
+  color: #0c1033;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.plan-content .plan-description {
+  color: #0c1033;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.plan-content .badge {
+  display: flex;
+  width: fit-content;
+  padding: 4px 12px;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 22px;
+  background: #2f42ee;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  width: 330px;
+}
+
+.actions .btn-primary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 45px;
+  background: #0C1033;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.actions .btn-primary:hover {
+  background: #4f46e5;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actions .btn-paypal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  border-radius: 45px;
+  background: #ffffff;
+  color: #0c1033;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.actions .btn-paypal:hover {
+  border-color: #4f46e5;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.actions .more-offers{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f46e5;
+  text-decoration: none;
+}

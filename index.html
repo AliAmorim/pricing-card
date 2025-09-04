@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Escolha seu plano</title>
+</head>
+<body>
+    <main class="subscription">
+  <section class="offer-card" aria-labelledby="offer-title">
+    
+    <!-- Título principal -->
+    <header class="offer-header">
+      <h1 id="offer-title">Try FREE for 4 weeks</h1>
+      <p class="subtitle">
+        We uncover the facts around the clock, all over the globe.
+      </p>
+    </header>
+
+    <!-- Opções de plano -->
+    <form class="plan-options">
+      
+      <!-- Plano mensal -->
+      <label class="plan-option">
+        <input type="radio" name="plan" value="monthly" checked>
+        <div class="plan-content">
+          <span class="plan-type">MONTHLY</span>
+          <strong class="plan-title">4 weeks for free</strong>
+          <span class="plan-description">
+            Then $3 every month for the first year
+          </span>
+        </div>
+      </label>
+
+      <!-- Plano anual -->
+      <label class="plan-option">
+        <input type="radio" name="plan" value="yearly">
+        <div class="plan-content">
+          <span class="badge">Best value</span>
+          <span class="plan-type">YEARLY</span>
+          <strong class="plan-title">4 weeks for free</strong>
+          <span class="plan-description">
+            Then $30 for the first year
+          </span>
+        </div>
+      </label>
+
+    </form>
+
+    <!-- Botões de ação -->
+    <div class="actions">
+      <button type="submit" class="btn-primary">Continue</button>
+      <button type="button" class="btn-paypal">
+        Continue with <img src="./images/paypal-logo.svg" alt="PayPal">
+      </button>
+      <a href="#" class="more-offers">View more offers</a>
+    </div>
+
+  </section>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>
